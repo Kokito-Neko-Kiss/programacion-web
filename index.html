@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leyes Dominicana - Biblioteca Jurídica</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <main class="main">
+        <h1 class="main_title">⚖️ Leyes Dominicana</h1>
+        <p class="subtitle">Sistema de Gestión y Consulta de Leyes de la República Dominicana</p>
+
+        <!-- Barra de Búsqueda -->
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Buscar por artículo, ley, palabra clave o tema..." />
+        </section>
+
+        <!-- Botones de filtro rápido por Materia -->
+        <section class="filters-section">
+            <button class="filter-btn active" data-materia="todos">Todas</button>
+            <button class="filter-btn" data-materia="Constitucional">Constitucional</button>
+            <button class="filter-btn" data-materia="Civil">Civil</button>
+            <button class="filter-btn" data-materia="Penal">Penal</button>
+            <button class="filter-btn" data-materia="Laboral">Laboral</button>
+            <button class="filter-btn" data-materia="Comercial">Comercial</button>
+        </section>
+
+        <!-- Contenedor de Tarjetas dinámicas -->
+        <section class="output">
+            <div class="cards-grid" id="cardsContainer">
+                <!-- Las leyes se inyectarán aquí mediante JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
